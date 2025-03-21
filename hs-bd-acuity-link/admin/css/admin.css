@@ -1,0 +1,124 @@
+/* General Styles */
+.acuity-admin-header {
+    margin: 20px 0;
+}
+
+.acuity-admin-actions {
+    margin: 20px 0;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+/* Status Indicators */
+.acuity-status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.acuity-status-success {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+.acuity-status-error {
+    background-color: #f2dede;
+    color: #a94442;
+}
+
+.acuity-status-warning {
+    background-color: #fcf8e3;
+    color: #8a6d3b;
+}
+
+/* Logs */
+.acuity-logs-wrapper {
+    margin-top: 20px;
+}
+
+.acuity-logs-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.acuity-error-details {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    overflow: auto;
+    max-height: 200px;
+}
+
+.acuity-error-details pre {
+    margin: 0;
+    white-space: pre-wrap;
+}
+
+/* Settings Tabs */
+.acuity-tabs-content > div {
+    display: none;
+}
+
+.acuity-tabs-content > div.active {
+    display: block;
+}
+
+/* Dashboard Widgets */
+.acuity-dashboard-widget .inside {
+    padding: 0;
+    margin: 0;
+}
+
+.acuity-dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 12px;
+}
+
+.acuity-stat-box {
+    padding: 10px;
+    text-align: center;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+}
+
+.acuity-stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0073aa;
+}
+
+.acuity-stat-label {
+    font-size: 13px;
+    color: #666;
+}
+
+/* Upcoming Classes Table */
+.acuity-upcoming-classes {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.acuity-upcoming-classes th,
+.acuity-upcoming-classes td {
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.acuity-upcoming-classes th {
+    background: #f5f5f5;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 782px) {
+    .acuity-dashboard-stats {
+        grid-template-columns: 1fr;
+    }
+}
